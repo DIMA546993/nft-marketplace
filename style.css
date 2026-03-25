@@ -77,6 +77,10 @@ body {
     line-height: var(--line-height-lg);
 }
 
+.heading-h5_mb {
+    margin-bottom: 5px;
+}
+
 .heading-h3_color-light,
 .heading-h5_color-light {
     color: var(--color-light);
@@ -338,13 +342,44 @@ body {
 }
 
 .categories__photo-wrapper::after {
-    content: url(img/PaintBrush.png);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
+}
+
+.categories__card:nth-child(1) .categories__photo-wrapper::after {
+    content: url(img/PaintBrush.png);
+}
+
+.categories__card:nth-child(2) .categories__photo-wrapper::after {
+    content: url(img/collectibles_icon.png);
+}
+
+.categories__card:nth-child(3) .categories__photo-wrapper::after {
+    content: url(img/music_icon.png);
+}
+
+.categories__card:nth-child(4) .categories__photo-wrapper::after {
+    content: url(img/photography_icon.png);
+}
+
+.categories__card:nth-child(5) .categories__photo-wrapper::after {
+    content: url(img/video_icon.png);
+}
+
+.categories__card:nth-child(6) .categories__photo-wrapper::after {
+    content: url(img/utility_icon.png);
+}
+
+.categories__card:nth-child(7) .categories__photo-wrapper::after {
+    content: url(img/sport_icon.png);
+}
+
+.categories__card:nth-child(8) .categories__photo-wrapper::after {
+    content: url(img/virtWorlds_icon.png);
 }
 
 .categories__card:nth-child(1) .categories__photo {
@@ -377,4 +412,49 @@ body {
 
 .categories__card:nth-child(8) .categories__photo {
     background-image: url(img/VirtualWorlds.png);
+}
+
+.discover__card {
+    overflow: hidden;
+}
+
+.discover__cards-wrapper {
+    margin-top: 60px;
+}
+
+.discover__image {
+    width: 330px;
+    height: 296px;
+    object-fit: cover;
+}
+
+.discover__info {
+    background-color: var(--color-secondary);
+    padding: 20px 30px;
+}
+
+.discover__additional-info {
+    margin-top: 25px;
+}
+
+.discover__label {
+    color: var(--color-caption);
+    font-size: var(--font-caption);
+    line-height: var(--line-height-xs);
+}
+
+.discover__price {
+    color: var(--color-light);
+    line-height: var(--line-height-lg);
+}
+
+.discover__additional-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discover__additional-info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
