@@ -543,3 +543,29 @@ body {
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-lg);
 }
+
+
+
+.how-it-works__cards-wrapper {
+    margin-top: 48px;
+}
+
+.how-it-works__info-card {
+    background-color: var(--color-secondary);
+    text-align: center;
+    width: 330px;
+    padding: 10px 30px 30px 30px;
+}
+
+.how-it-works__card-details {
+    margin-top: 20px;
+
+}
+
+.how-it-works__description {
+    color: var(--color-light);
+    font-size: var(--font-base);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-lg);
+    margin-top: 10px;
+}
