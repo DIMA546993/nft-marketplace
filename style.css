@@ -53,6 +53,10 @@ body {
     padding-block: 80px;
 }
 
+.section-padding-40 {
+    padding-block: 40px;
+}
+
 .headline {
     display: flex;
     justify-content: space-between;
@@ -627,4 +631,66 @@ body {
     top: 0px;
     border: none;
     cursor: pointer;
+}
+
+.footer {
+    background-color: var(--color-secondary);
+}
+
+.footer__info {
+    padding-inline: 31px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__additional-info {
+    margin-top: 30px;
+    width: 238px;
+}
+
+.footer__text {
+    color: #ccc;
+    line-height: var(--line-height-lg);
+}
+
+.footer__join {
+    margin-top: 20px;
+}
+
+.footer__social-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer__explore h5,
+.footer__subscribe h5 {
+    font-family: "Space Mono", monospace;
+}
+
+.footer__nav {
+    margin-top: 25px;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__subscribe-wrapper {
+    margin-top: 25px;
+}
+
+.footer__subscribe-text {
+    width: 330px;
+    margin-bottom: 20px;
+}
+
+.footer__copy {
+    border-top: 1px solid #858584;
+    font-size: var(--font-caption);
+    line-height: var(--line-height-xs);
+    padding-top: 20px;
+    margin-top: 30px;
 }
