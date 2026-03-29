@@ -479,7 +479,12 @@ body {
 }
 
 .highlight {
-    background-image: url(img/Keemun_mushroom1.png);
+    background: linear-gradient(#A259FF00, #A259FF), url(img/Keemun_mushroom1.png);
+    padding-top: 360px;
+    padding-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
 }
 
 .highlight__info {
