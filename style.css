@@ -69,6 +69,12 @@ body {
     gap: 10px;
 }
 
+.button_mobile-visible {
+    margin-top: 40px;
+    justify-content: center;
+    display: none !important;
+}
+
 .heading-h2 {
     font-size: var(--font-h2);
     font-weight: var(--font-weight-semibold);
@@ -825,6 +831,44 @@ body {
         width: 30%;
         height: auto;
     }
+
+    .top-rated-artists__cards {
+        margin-top: 40px;
+    }
+
+    .top-rated-artists__card {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        flex-basis: 47%;
+        gap: 20px;
+    }
+
+    .top-rated-artists__avatar {
+        margin-bottom: 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .top-rated-artists__ranking-number {
+        text-align: center;
+    }
+
+    .top-rated-artists__card:nth-child(n + 7) {
+        display: none;
+    }
+
+    .discover__card:last-child {
+        display: none;
+    }
+
+    .discover__card {
+        width: 47%;
+    }
+
+    .discover__image {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -841,6 +885,28 @@ body {
 
     .trending-collection__heading-h5 {
         font-size: var(--font-base);
+    }
+}
+
+@media screen and (max-width: 646px) {
+    .top-rated-artists__card {
+        flex-basis: 100%;
+    }
+
+    .button_mobile-hide {
+        display: none;
+    }
+
+    .button_mobile-visible {
+        display: flex !important;
+    }
+
+    .discover__card {
+        width: 100%;
+    }
+
+    .discover__card:last-child {
+        display: block;
     }
 }
 
